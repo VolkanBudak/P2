@@ -55,6 +55,7 @@ input[type="checkbox"] {
 }
 @media (max-width: 1000px) {
   nav {
+    z-index: 1;
     padding: 0 40px 0 50px;
   }
 }
@@ -483,6 +484,10 @@ body {
 
 /*--------CV-----------------------------------*/
 
+.CV-body {
+  /* z-index: -1; */
+}
+
 .skill-set li:hover {
   background: cyan;
 }
@@ -493,7 +498,7 @@ body {
 
 .left {
   float: right;
-  height: 100%;
+  height: 100vh;
   margin-left: -1px;
   min-width: 256px;
   position: fixed;
@@ -546,7 +551,7 @@ body {
 
 .inner {
   margin: 0 auto;
-  max-width: 975px;
+  max-width: 100vw;
   padding: 3em;
 }
 
